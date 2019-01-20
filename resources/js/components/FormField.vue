@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import DateTimePicker from '../../../../../nova/resources/js/components/DateTimePicker'
+import DateTimePicker from '../../../../../../nova/resources/js/components/DateTimePicker'
 import {
     Errors,
     FormField,
