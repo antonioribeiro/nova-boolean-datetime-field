@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center">
+    <div class="flex justify-center">
         <span
             v-if="field.showBadge"
             class="flex rounded-full uppercase px-2 py-1 w-12 text-xs font-bold mr-3 justify-center"

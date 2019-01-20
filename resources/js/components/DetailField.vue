@@ -1,6 +1,6 @@
 <template>
     <panel-item :field="field">
-        <div slot="value" class="text-90 flex">
+        <div slot="value" class="flex text-90">
             <div
                 v-if="field.showBadge"
                 class="flex rounded-full uppercase px-2 py-1 w-12 text-xs font-bold mr-3 justify-center"
@@ -11,12 +11,12 @@
 
             <div
                 v-if="!field.showBadge"
-                class="inline-block rounded-full w-2 h-2"
+                class="flex rounded-full w-2 h-2 mr-3"
                 :class="field.value ? field.colorTrue : field.colorFalse"
             ></div>
 
             <div>
-                <p v-if="field.value" class="text-90">
+                <p v-if="field.value" class="flex text-90">
                     {{ localizedDateTime }}
                 </p>
                 <p v-else>&mdash;</p>
