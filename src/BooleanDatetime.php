@@ -16,6 +16,13 @@ class BooleanDatetime extends Field
     public $component = 'boolean-datetime';
 
     /**
+     * The text alignment for the field's text in tables.
+     *
+     * @var string
+     */
+    public $textAlign = 'center';
+
+    /**
      * Show a badge instead of a colored dot.
      *
      * @var boolean
