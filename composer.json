@@ -1,5 +1,5 @@
 {
-    "name": "pragmarx/boolean-datetime",
+    "name": "pragmarx/nova-boolean-datetime-field",
     "description": "A Laravel Nova Boolean DateTime field.",
     "keywords": [
         "laravel",
