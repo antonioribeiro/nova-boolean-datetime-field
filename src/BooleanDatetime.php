@@ -1,6 +1,6 @@
 <?php
 
-namespace Clearitie\BooleanDatetime;
+namespace PragmaRX\BooleanDatetime;
 
 use Exception;
 use DateTimeInterface;
