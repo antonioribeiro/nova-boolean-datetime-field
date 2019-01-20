@@ -28,21 +28,44 @@ use PragmaRX\BooleanDatetime\BooleanDatetime;
 
 And here's some usage examples:
 
+A normal dotted boolean 
+
 ``` php
 BooleanDatetime::make('Sent', 'sent_at'),
+```
 
+A badge datetime boolean
+
+``` php
 BooleanDateTime::make('Delivered', 'delivered_at')
     ->badge(),
+```
 
+Change colors
+``` php
 BooleanDateTime::make('Bounced', 'bounced_at')
     ->badge()
     ->colors('bg-danger text-white', 'bg-lighter text-black'),
+```
 
+Make a less important value a clear badge
+``` php
 BooleanDateTime::make('Opened', 'opened_at')
     ->badge()
     ->colors('bg-success text-white', 'bg-warning text-black'),
+```
 
+Change badge labels
+
+``` php
+BooleanDateTime::make('Clicked', 'clicked_at')
+    ->badge('Done', 'Open'),
+```
+
+Hide it from index
+``` php
 BooleanDateTime::make('Clicked', 'clicked_at')
     ->badge()
     ->hideFromIndex(),
 ```
+
