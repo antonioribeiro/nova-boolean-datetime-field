@@ -163,7 +163,7 @@ class BooleanDatetime extends Field
      *
      * @return $this
      */
-    public function nullable()
+    public function nullable($nullable = true, $values = NULL)
     {
         return $this->withMeta([__FUNCTION__ => true]);
     }
