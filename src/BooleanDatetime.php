@@ -75,6 +75,10 @@ class BooleanDatetime extends Field
             $attribute,
             $resolveCallback ??
                 function ($value) {
+                    if (empty($value)) {
+                        return null;   
+                    }
+                    
                     if (!$value instanceof DateTimeInterface) {
                         throw new Exception(
                             "DateTime field must cast to 'datetime' in Eloquent model."
